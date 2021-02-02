@@ -2,11 +2,13 @@ import React from 'react'
 import Card from './Card'
 
 const ExerciseList = (props) => (
+
     props.exercises.map((exercise) => {
         return (
             <div>
                 <Card
                     key={exercise.id}
+                    id={exercise.id}
                     title={exercise.title}
                     description={exercise.description}
                     img={exercise.img}

@@ -5,7 +5,7 @@ import Card from '../components/Card'
 const ExerciseNew = ({form, onChange, onSubmit}) => (
     <div className="container mt-5">
         <div className="row">
-            <div className="col-sm">
+            <div className="col-sm m-auto">
                 <Card 
                     {...form}
                 />

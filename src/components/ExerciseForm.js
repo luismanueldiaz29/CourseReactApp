@@ -4,12 +4,6 @@ class ExerciseForm extends Component{
 
     state = {}
 
-    handleClick(){
-        console.log('Clicked')
-    }
-
-
-
     render(){
         const { onChange, form, onSubmit } = this.props;
         return(
@@ -78,7 +72,7 @@ class ExerciseForm extends Component{
                             </div>
                         </div>
                     </div>
-                    <button className="btn btn-primary" onClick={this.handleClick}>Button</button>
+                    <button className="btn btn-primary">Button</button>
                 </form>
             </div>
         )
