@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import ButtonBack from '../components/ButtonBack'
 import FatalError from './500'
 import ExerciseNew from './ExerciseNew'
+import urlApi from '../config'
 
 class ExerciseNewContainer extends Component{
 
@@ -41,7 +42,7 @@ class ExerciseNewContainer extends Component{
                 body: JSON.stringify(this.state.form)
             }
 
-            let res = await fetch('http://localhost:8000/api/exercises', config);
+            let res = await fetch(`${urlApi}/exercises`, config);
             let json = await res.json();
 
             this.setState({
